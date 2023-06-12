@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+
+@font-face {
+  font-family: tilt_neon;
+  src: url(Assets/Fonts/TiltNeon[XROT\,YROT].woff2);
+}
+
+html {
+  font-family: "Space Grotesk", sans-serif;
+  background-image: url("Assets/felix-mittermeier-Knwea-mLGAg-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  width: 95%;
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'tilt_neon', sans-serif;
+}
+
+/*Element Selector*/
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1em;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.45);
+  border: 5px solid #bf40bf;
+  border-radius: 0.5rem;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+/*Header - Introduction*/
+header {
+  margin-top: 1em;
+  padding: 2em;
+  padding-right: 0;
+  margin-right: 0;
+  padding-left: 0;
+  margin-left: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*Descendant Selector*/
+header div {
+  padding: 1.5em;
+  padding-top: 0.5em;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+header img {
+  max-width: 20%;
+  height: auto;
+  box-shadow: 5px 10px rgba(191, 64, 150, 0.4);
+  background-color: rgba(0, 0, 0, 0.45);
+  border: 5px solid #bf40bf;
+  border-radius: 0.5rem;
+  margin-right: 0.5em;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.3rem;
+}
+
+/*Class Selector*/
+.name {
+  display: inline;
+  color: #bf40bf;
+}
+
+header p {
+  text-align: justify;
+}
+
+.ukraine-text-image {
+  font-weight: bolder;
+  display: inline;
+  background-image: url(Assets/Flag_of_Ukraine.svg);
+  background-size: contain;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.canada-text-image {
+  font-weight: bolder;
+  display: inline;
+  background-image: url(Assets/Flag_of_Canada.png);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*Adjacent sibling selector*/
+header h1 + p {
+  display: inline;
+}
+
+/*Skills Section*/
+.skill-list {
+  background-image: url(Assets/milky_way_galaxy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 0.5rem;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills div {
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-right: 1.5%;
+  padding-left: 1.75%;
+}
+
+.skills div h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/*Projects Section*/
+.project-list {
+  margin-top: 4em;
+}
+
+.project-list h3 {
+  font-size: 1.5rem;
+}
+
+.project-list ul {
+  list-style: square;
+}
+
+.proj-1,
+.proj-2,
+.proj-3,
+.proj-4 {
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-right: 1.5%;
+  padding-left: 1.75%;
+  padding: 1em;
+}
+
+/*ID Selector*/
+#double-proj {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.proj-1 {
+  margin-right: auto;
+}
+
+.proj-2 {
+  margin-right: 1em;
+}
+
+.proj-2,
+.proj-3 {
+  padding-left: 1.5em;
+}
+
+.proj-4 {
+  margin-top: 1em;
+  padding-top: 0.125em;
+  margin-left: auto;
+  text-align: right;
+}
+
+/*Section - Contact*/
+.contact-form h2 {
+  margin-top: 2em;
+}
+
+.button-div {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*Pseudo Class Selector*/
+a:link {
+  padding: 1em;
+  background-color: #bf40bf;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 9%;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.45);
+}
+
+a:visited {
+  background-color: #aa4a48;
+  color: #fff;
+  font-weight: bold;
+}
+
+a:hover {
+  background-color: #fff;
+  color: #bf40bf;
+  font-weight: bold;
+  box-shadow: 3px 7px rgba(0, 0, 0, 0.45);
+}
+
+a:active {
+  background-color: #333;
+  color: #fff;
+}
+
+.form-div {
+  margin-top: 2em;
+}
+
+.form-div .form-div-in {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-div form {
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-right: 1.5%;
+  padding-left: 1.75%;
+  padding-bottom: 1.5em;
+  margin-bottom: 2em;
+}
+
+.form-div-in input,
+.form-div-in textarea {
+  color: #bf40bf;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-right: 1.5%;
+  padding-left: 1.75%;
+  margin: 1em;
+  padding: 1em;
+  font-size: 0.75rem;
+}
+
+.form-div-in .inputs-12 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-div-in .inputs-12 input {
+  width: 47%;
+}
+
+/*Pseudo Elements Selector*/
+.form-div-in input::placeholder,
+.form-div-in textarea::placeholder {
+  color: #fff;
+  opacity: 0.75;
+}
+
+.form-button-div {
+  margin-top: 1em;
+  margin-left: 0.3em;
+}
+
+.form-button-div a:link {
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+/*Media Queries*/
+@media (max-width: 923px) {
+  header {
+    flex-direction: column;
+  }
+
+  header img {
+    max-width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .skill-list {
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  .soft-skills {
+    margin-bottom: 1em;
+  }
+
+  #double-proj {
+    flex-direction: column;
+  }
+
+  .button-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-div a {
+    margin: 0.5em;
+  }
+}
+
+@media (max-width: 1400px) and (orientation: landscape) {
+  header {
+    flex-direction: column;
+  }
+
+  header img {
+    max-width: 50%;
+    margin: auto;
+    margin-bottom: 1em;
+  }
+}
